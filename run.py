@@ -8,10 +8,10 @@ from telegram import Update, ReplyKeyboardMarkup, \
     ReplyKeyboardRemove, File
 from telegram.ext import Application, CallbackContext, CommandHandler, MessageHandler, filters, ConversationHandler
 
-from tg_evaluation.config import BOT_TOKEN, DATABASE_URL, KITTEN_SOURCE
-from tg_evaluation.db import start_database, session_scope
-from tg_evaluation.model import Item, Interaction
-from tg_evaluation.utils import admin_tool
+from config import BOT_TOKEN, DATABASE_URL, KITTEN_SOURCE
+from db import start_database, session_scope
+from model import Item, Interaction
+from utils import admin_tool
 
 EXPECT_READY, EXPECT_RELEVANCE, EXPECT_QUALITY, START_AGAIN, HERO = range(5)
 EVALUATION_KEYBOARD = [["1", "2", "3", "4", "5", "Cancel"]]

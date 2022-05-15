@@ -1,7 +1,7 @@
 from functools import wraps
 from typing import Callable
 
-from tg_evaluation.config import ADMIN_ID
+from config import ADMIN_ID
 
 
 def admin_tool(func) -> Callable:
