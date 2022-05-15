@@ -1,4 +1,5 @@
 SQLAlchemy~=1.4.36
-telegram~=0.0.1
 requests~=2.25.1
 python-dotenv~=0.20.0
+
+git+https://github.com/python-telegram-bot/python-telegram-bot.git@master
